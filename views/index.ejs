@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country and Capital Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="./checkresult" method="post">
+    <div class="quiz-container">
+        <h1>County and Capital Quiz</h1>
+        <div id="quiz-section">
+            <h2 id="country-name">County: <strong>
+             <%= countries[index].county %>
+
+            </strong> </h2>
+            <input type="text" id="capital-input" placeholder="Enter the capital" />
+        
+            <button id="submit-btn" class="btn">Submit</button>
+            <p id="result-message"></p>
+        </div>
+        <button id="next-btn" class="next-btn">Next Country</button>
+        <div id="score-container" class="score-container">
+            <h2>Your Score: <span id="score"></span></h2>
+            <button id="restart-btn" class="restart-btn"> Restart Quiz</button>
+        </div>
+    </div>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>
