@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Nabu990/County-and-Capital#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "path": "^0.12.7"

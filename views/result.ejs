@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <h1>Quiz Result</h1>
+    <p>You answered "<%= userAnswer %>" for the capital of <%= county %>.</p>
+    <% if (isCorrect) { %>
+        <p class="correct-answer" >Correct! Well done.</p>
+    <% } else { %>
+        <p class="wrong-answer" >Incorrect. The correct answer is "<%= correctAnswer %>".</p>
+    <% } %>
+    <a href="/">Try another question</a>
+</body>
+</html>
+
+
+
+

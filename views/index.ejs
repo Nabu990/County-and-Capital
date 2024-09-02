@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country and Capital Quiz</title>
+    <title>Liberia County Capitals Quiz</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="./checkresult" method="post">
-    <div class="quiz-container">
-        <h1>County and Capital Quiz</h1>
-        <div id="quiz-section">
-            <h2 id="country-name">County: <strong>
-             <%= countries[index].county %>
-
-            </strong> </h2>
-            <input type="text" id="capital-input" placeholder="Enter the capital" />
-        
-            <button id="submit-btn" class="btn">Submit</button>
-            <p id="result-message"></p>
-        </div>
-        <button id="next-btn" class="next-btn">Next Country</button>
-        <div id="score-container" class="score-container">
-            <h2>Your Score: <span id="score"></span></h2>
-            <button id="restart-btn" class="restart-btn"> Restart Quiz</button>
-        </div>
+    <div class="container">
+        <h1>What is the capital of <%= county.county %>?</h1>
+        <form action="/submit" method="post">
+            <input type="hidden" name="county" required value="<%= county.county %>">
+            <label for="answer">Your Answer:</label>
+            <input type="text" id="answer" name="answer" required>
+            <button type="submit">Submit</button>
+        </form>
     </div>
-    </form>
-    <script src="js/index.js"></script>
 </body>
 </html>
+
