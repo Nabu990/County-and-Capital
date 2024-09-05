@@ -1,4 +1,4 @@
-   const liberiaCounties = [
+const counties = [
     { county: "Bomi", capital: "Tubmanburg" },
     { county: "Bong", capital: "Gbarnga" },
     { county: "Gbarpolu", capital: "Bopolu" },
@@ -15,4 +15,5 @@
     { county: "River Gee", capital: "Fish Town" },
     { county: "Sinoe", capital: "Greenville" }
 ];
-module.exports = liberiaCounties;
+
+module.exports = counties
